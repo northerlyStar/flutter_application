@@ -32,7 +32,6 @@ class MyApp extends StatelessWidget {
           '/tabPage': (context) => TabPage(),
         },
         initialRoute: '/',
-        // home: MyHomePage(),
       ),
     );
   }
