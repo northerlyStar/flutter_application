@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 // import '/pages/user.dart';
 import '/pages/tab_page.dart';
+import '/pages/cupertino_page.dart';
 
 void main() {
   FlutterError.onError = (details) {
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => MyHomePage(),
           '/tabPage': (context) => TabPage(),
+          '/cupertinoPage': (context) => CupertinoPage(),
         },
         initialRoute: '/',
       ),
@@ -209,7 +211,10 @@ class GeneratorPage extends StatelessWidget {
           ),
           ElevatedButton(onPressed: () {
             Navigator.pushNamed(context, '/tabPage');
-          }, child: Text('test route'))
+          }, child: Text('test route')),
+          ElevatedButton(onPressed: () {
+            Navigator.pushNamed(context, '/cupertinoPage');
+          }, child: Text('cupertino page'))
         ],
       ),
     );
